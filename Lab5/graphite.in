@@ -1,0 +1,25 @@
+&control
+calculation = 'scf',
+prefix = 'c',
+pseudo_dir = './',
+outdir = './'
+/
+&system
+ibrav=4,
+celldm(1) = 4.659,
+celldm(3) = 2.724,
+nat = 4,
+ntyp = 1,
+ecutwfc = 100.0,
+/
+&electrons
+conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+C 12.01 C.pz-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS {crystal}
+C 0.00 0.00 0.25
+C 0.0 0.0 0.75
+C 0.333333 0.66667 0.25
+C 0.66667 0.333333 0.75
+K_POINTS gamma

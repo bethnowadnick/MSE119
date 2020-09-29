@@ -1,0 +1,27 @@
+&control
+calculation = 'vc-relax',
+prefix = 'diamond',
+pseudo_dir = './',
+outdir = './'
+/
+&system
+ibrav=2,
+celldm(1) = 6.5,
+nat = 2,
+ntyp = 1,
+ecutwfc = 60.0,
+/
+&electrons
+conv_thr = 1.0d-8
+/
+&ions
+/
+&cell
+/
+ATOMIC_SPECIES
+C 12.0107 C.pz-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS {alat}
+C 0.00 0.00 0.00
+C 0.25 0.25 0.25
+K_POINTS automatic
+4 4 4 1 1 1
